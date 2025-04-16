@@ -1,4 +1,4 @@
-package com.kajalk11.AR.BUSINESS.CARD.user;
+package com.kajalk11.AR.BUSINESS.CARD.user.model;
 
 
 
@@ -72,7 +72,8 @@ public class User {
         this.phone = phone;
     }
 
-    public String getJobTitle() {
+    public String getJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
         return jobTitle;
     }
 
@@ -120,5 +121,10 @@ public class User {
                 ", jobTitle='" + jobTitle + '\'' +
                 ", company='" + company + '\'' +
                 '}';
+    }
+
+
+    public String getJobTitle() {
+        return jobTitle;
     }
 }
